@@ -1,7 +1,26 @@
 aid: pomelo-fashion
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/pomelo-fashion.png
 name: Pomelo fashion
-description: Pomelo fashion is a company surfaced as a portfolio company of 500-global and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: 'Pomelo Fashion is an omnichannel fashion retailer headquartered in Bangkok,
+  Thailand, selling women''s apparel and accessories across Southeast Asia through its
+  website and mobile app. It was surfaced in the API Evangelist network as a portfolio
+  company of 500 Global. As of this enrichment pass the company publishes a consumer
+  e-commerce storefront (pomelofashion.com, served via CloudFront) but exposes no public
+  developer portal, API documentation, OpenAPI specification, or /.well-known discovery
+  surface (all probed paths returned HTTP 405). This profile therefore carries only
+  probed domain-security signal; it remains a lead for revisiting should a developer
+  program launch.'
 url: https://raw.githubusercontent.com/api-evangelist/pomelo-fashion/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +30,14 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Fashion
+- Retail
+- E-Commerce
+- Apparel
+- Southeast Asia
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +45,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/pomelo-fashion-domain-security.yml
 - type: Website
   url: https://pomelofashion.com
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
